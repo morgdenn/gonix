@@ -1,5 +1,5 @@
 # Project-specific variables
-BINARY_NAME = gonix
+BINARY_DIR = bin
 
 # Build commands
 .PHONY: all ls mv rm clean
@@ -7,14 +7,14 @@ BINARY_NAME = gonix
 all: ls mv rm
 
 ls:
-	go build -o bin/ls cmd/ls/ls.go
+	go build -o $(BINARY_DIR)/ls.exe cmd/ls/ls.go
 
 mv:
-	go build -o bin/mv cmd/mv/mv.go
+	go build -o $(BINARY_DIR)/mv.exe cmd/mv/mv.go
 
 rm:
-	go build -o bin/rm cmd/rm/rm.go
+	go build -o $(BINARY_DIR)/rm.exe cmd/rm/rm.go
 
 # Clean up build artifacts
 clean:
-	rm -rf bin/*
+	@if exist $(BINARY_DIR) (rmdir /S /Q $(BINARY_DIR))

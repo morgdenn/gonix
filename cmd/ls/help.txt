@@ -1,0 +1,10 @@
+Usage: ls [OPTION]... [FILE]...
+List information about the FILEs (the current directory by default).
+
+Mandatory arguments to long options are mandatory for short options too.
+  -l                         use a long listing format
+      --help     display this help and exit
+
+GoNix online help: <https://github.com/morgdenn/gonix/wiki>
+Report any translation bugs to <https://github.com/morgdenn/gonix/issues>
+Full documentation <https://github.com/morgdenn/gonix/wiki>
