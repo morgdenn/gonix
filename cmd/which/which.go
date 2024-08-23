@@ -1,5 +1,10 @@
 package main
 
+/*
+  We could use exec.LookPath(command) to find the path of the command.
+	But this we have more control over the search process.
+*/
+
 import (
 	"fmt"
 	"os"
